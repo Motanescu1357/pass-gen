@@ -6,6 +6,6 @@ def main():
     while True:
         upper_limit = input("Input security score:")
         print(f"Normal passwd:{str(secrets.randbits(random.randint(a=0, b=int(upper_limit)))) + hex(secrets.randbits(random.randint(a=0, b=int(upper_limit))))}")
-        print(f"Great passwd:{secrets.randbits(int(upper_limit))}")
+        print(f"Greater passwd:{secrets.randbits(int(upper_limit))}")
 if __name__ == '__main__':
     main()
